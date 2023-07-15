@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spinner Online-coder</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="Black White Minimalist Logo.png" />
+        </div>
+        <div class="text">
+            <p id="text-sec">VinothKumar Sanjeevi Online-Coder</p>
+        </div>
+    </div>
+    <script>
+        var text=document.querySelector('.text p');
+        text.innerHTML=text.innerHTML.split('').map((char,i)=>
+        `<span style="transform:rotate(${ i * 10}deg)">${char}</span>`
+        ).join('')
+    </script>
+</body>
+</html>
